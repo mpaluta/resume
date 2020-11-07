@@ -1,0 +1,178 @@
+% Mark Paluta's resume
+% Borrowed a few templates from Dan at toofishes.net
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.25in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{paracol}
+\usepackage{changepage}   % for the adjustwidth environment
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
+
+\begin{document}
+
+% Title block
+    \begin{center}
+    {\LARGE \textbf{Mark Paluta}} \ \ \ \ \
+    markpaluta@gmail.com \ \textbullet \ \ (763) 242-0792 \ \textbullet \ \ \href{https://github.com/mpaluta}{https://github.com/mpaluta}
+    \end{center}
+
+\subsection*{Summary}
+
+    \begin{description}
+
+    Research scientist with 5 years of experience across mathematical modeling, business analytics, experimentation, and engineering. Most comfortable delivering results, learning and cultivating a growth mindset, and bringing out the best in others.
+
+    \end{description}
+
+\subsection*{Experience}
+
+    \quad \ \ \textbf{Convoy \hfill Nov 2019 – Present}
+
+        \quad \emph{Research Scientist \hfill Nov 2019 – Present}
+
+            \begin{itemize}[label={--}, leftmargin=.5in, labelindent=16pt, topsep=1pt]
+                \setlength\itemsep{-.25em}
+            	\item Built all of the company operational work forecasts for one day to one week horizons. Improved MAPE 20-40\% by work type compared to rolling average baselines.
+            	\item Deployed prioritization model for facility appointment setting operational work. Saved \$3-5/shipment by prioritizing getting more price-sensitive shipments to market.
+            \end{itemize}
+
+    \textbf{Boeing \hfill Feb 2016 – Oct 2019}
+
+        \quad \emph{Data Scientist \hfill Jan 2019 – Oct 2019}
+
+            \begin{itemize}[label={--}, leftmargin=.5in, labelindent=16pt, topsep=1pt]
+                \setlength\itemsep{-.25em}
+            	\item Deployed prognostics models and identified 10+ degraded components for early replacement, reducing unscheduled maintenance burden on airlines.
+            	\item Invented tool for automated aggregation and cleaning of aircraft part history data.
+            \end{itemize}
+
+        \quad \emph{Software Engineer \hfill Sept 2018 – Jan 2019}
+
+            \begin{itemize}[label={--}, leftmargin=.5in, labelindent=16pt, topsep=1pt]
+                \setlength\itemsep{-.25em}
+            	\item Architected user permissions system in Python and Neo4j, including read and write access, military restrictions, and admin rights for enterprise manufacturing application with future 10,000+ user base.
+            \end{itemize}
+
+        \quad \emph{Lead Quality Engineer \hfill April 2017 – Sept 2018}
+
+            \begin{itemize}[label={--}, leftmargin=.5in, labelindent=16pt, topsep=1pt]
+                \setlength\itemsep{-.25em}
+            	\item Led a team of 13 engineers on data analysis of fuselage automation center health. Designed experiments, sampling plans, and statistical models to improve production quality; eliminated four major chronic defects each costing \$10k+ per airplane.
+            	\item Strategically informed executive-level business decisions by visualizing and presenting production quality data; made recommendations regarding risks and opportunities.
+            	\item Achieved maximum performance score in first year, ranked in top tier of organizational retention, and earned accelerated promotion due to technical achievement.
+            \end{itemize}
+
+        \quad \emph{Product Review Engineer \hfill Feb 2016 – April 2017}
+
+            \begin{itemize}[label={--}, leftmargin=.5in, labelindent=16pt, topsep=1pt]
+            \setlength\itemsep{-.25em}
+            	\item Assumed sole responsibility for integrity of ~300 repairs for 20+ year airplane lifetime.
+            \end{itemize}
+
+% \columnratio{.618, .382} % golden ratio
+\columnratio{.72, .28}
+\begin{paracol}{2}
+\setlength{\columnsep}{2em}
+
+\begin{leftcolumn}
+
+\subsection*{Education}
+
+    \quad \ \ \textbf{UC Berkeley}, Master of Information and Data Science (MIDS) \textbf{\hfill Dec. 2019}
+
+    \parskip=0.25em
+
+    \textbf{Stanford University}, M.S., Aeronautics and Astronautics \textbf{\hfill Dec. 2015}
+
+    \parskip=0.25em
+
+    \textbf{University of Notre Dame}, B.S., Aerospace Engineering, \emph{magna cum laude} \textbf{\hfill May 2014}
+
+\subsection*{Selected Projects}
+
+    \quad \ \ \href{https://www.ischool.berkeley.edu/projects/2019/fairair-filling-gaps-air-pollution-monitoring}{FairAir}
+
+    \parskip=.1em
+
+        \begin{adjustwidth}{2.5em}{}
+        Won the Hal Varian Capstone Award for top project among 13 student teams. Leverages the PurpleAir IoT air quality sensor network to predict air quality in disadvantaged neighborhoods that cannot afford sensor coverage and are nearer to pollution sources.
+        \end{adjustwidth}
+
+    \href{https://github.com/mpaluta/headline_generation/blob/master/Headline_Generation_Arnoldy_Paluta.pdf}{Headline Generation with Sentiment}
+
+        \begin{adjustwidth}{2.5em}{}
+        Applied novel sentiment-based preprocessing technique prior to text summarization algorithm. Improved sentiment score without sacrificing summarization score.
+        \end{adjustwidth}
+
+    \href{https://github.com/mpaluta/Quadrotor-PILCO/blob/QuadrotorPILCO/Quadrotor\%20Reinforcement\%20Learning\%20Research.pdf}{Quadrotor Reinforcement Learning Research}
+
+        \begin{adjustwidth}{2.5em}{}
+        Designed simulation of quadrotor UAV in MATLAB and implemented from-scratch reinforcement learning; learned behavior comparable to PID controller.
+        \end{adjustwidth}
+
+    \href{https://github.com/mpaluta/Tetris-Reinforcement-Learning/blob/master/Reinforcement\%20Learning\%20for\%20Tetris.pdf}{Tetris Reinforcement Learning}
+
+        \begin{adjustwidth}{2.5em}{}
+        Implemented Tetris RL algorithm in Python and outperformed lowest-center-of-gravity baseline.
+        \end{adjustwidth}
+
+    \href{https://github.com/mpaluta/Ant-Colony-Optimization/blob/master/Ant\%20Colony\%20Optimization.pdf}{Appliance Scheduling Optimization}
+
+        \begin{adjustwidth}{2.5em}{}
+        Optimized residential appliance scheduling for earliest completion time using ant-colony optimization in Python; baselined results against duration-sorting algorithms.
+        \end{adjustwidth}
+
+\end{leftcolumn}
+\begin{rightcolumn}
+
+\subsection*{Awards}
+
+    \begin{itemize}[label={--}, leftmargin={.15in}, rightmargin={.2in}]
+    	\parskip=0.1em
+
+    	\item
+    		\emph{Hal Varian Capstone Award}
+    	\item
+    		\emph{Stanford Departmental Fellowship}
+    	\item
+    		\emph{Boeing Scholar}
+
+    \end{itemize}
+
+\subsection*{Publications}
+
+    \begin{itemize}[label={--}, leftmargin={.15in}, rightmargin={.2in}]
+    	\parskip=0.1em
+
+    	\item
+    		MJ Bilka, MR Paluta, JC Silver, SC Morris - Experiments in Fluids (2015). \emph{Spatial correlation of measured unsteady surface pressure behind a backward-facing step.}
+
+    \end{itemize}
+
+\subsection*{Core Technical Skills}
+
+    \begin{itemize}[label={--}, leftmargin={.15in}, rightmargin={.2in}]
+    	\parskip=0.1em
+        \item
+    	\textbf{Languages:} Python, R, SQL
+    	\item
+    	\textbf{Math:} machine learning, statistics, experimentation, optimization, forecasting
+
+    \end{itemize}
+
+\end{rightcolumn}
+\end{paracol}
+
+\end{document}
